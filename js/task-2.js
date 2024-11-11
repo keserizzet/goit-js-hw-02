@@ -2,13 +2,14 @@ function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
         return message;
     } else {
-        return message.slice(0, maxLength) + '...'
+        return message.slice(0, maxLength) + "...";
     }
 }
 
-console.log(formatMessage( "Cihazın bakımı yapılacaktır" , 16 )); // "Dosyayla ilgilenilecek..." 
-console.log(formatMessage( "Cihazın bakımı yapılacaktır" , 23 )); // "Sistemin bakımı yapılacak" 
-console.log(formatMessage( "Giriş temiz ve kolay değil" , 20 )); // "Lobi kolaydır..." 
-console.log(formatMessage( "Giriş kapısı da kolay değil" , 30 )); // "Giriş de kolay değil" 
-console.log(formatMessage( "Ama şimdi nunc fringilla'da turpis a felis" , 15 )); // "Şimdi çok çirkin..." 
-console.log(formatMessage( "Ama şimdi nunc fringilla'da turpis a felis" , 41 )); // "Ama şimdi çirkin ama şimdi çalışıyor"
+console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
+console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
+console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
+console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
